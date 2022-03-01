@@ -1,0 +1,100 @@
+/* ================= GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+  --light-color: #EFF2FB;
+  --dark-color: #040710;
+  --blue-100: #BECAEF;
+  --blue-200: #9DAFE7;
+  --blue-300: #6B87DB;
+  --blue-400: #4A6DD3;
+  --blue-500: #3055C5;
+  --dark-blue: #203983;
+}
+
+/* ================= CABEÇALHO ===== */
+header {
+    background-color: var(--dark-color);
+}
+@keyframes changeTextShadow {
+  from {
+      text-shadow: none;
+  }
+  to {
+      text-shadow: 0 0 10px var(--blue-200);
+  }
+}
+@keyframes changeBracketColor {
+  from {
+    color: var(--light-color);
+  }
+  to {
+    color: var(--blue-400);
+  }
+}
+.header__title {
+    color: var(--light-color);
+    text-align: center;
+    padding: 1rem 0;
+    transition: text-shadow 0.2s, color 0.2s;
+    animation-name: changeTextShadow;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    font-size: 2.2rem;
+}
+.header__title::before {
+    content: '{';
+}
+.header__title::after {
+    content: '}';
+}
+.header__title::before,
+.header__title::after {
+  transition: color 0.2s;
+  animation-name: changeBracketColor;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+.header__menu {
+  padding: 1.2rem 0;
+}
+.menu__items {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.2rem;
+}
+.menu__item {
+    padding: 0.5rem 0;
+}
+.menu__item a {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    transition: text-shadow 500ms, color 500ms;
+}
+.menu__item a:hover,
+.menu__item a:active {
+    text-shadow: 0 0 10px var(--blue-300);
+}
+.menu__item a::after {
+    content: '';
+    width: 0;
+    height: 0.125rem;
+    background: var(--blue-200);
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    transition: width 0.2s;
+}
+.menu__item a:hover::after, .menu__item a:active::after {
+    width: 100%;
+}
