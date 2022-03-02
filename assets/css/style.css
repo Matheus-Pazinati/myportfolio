@@ -1,12 +1,19 @@
 /* ================= GLOBAL ===== */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Luxurious+Roman&display=swap');
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: var(--font-text);
+}
+h1,h2,h3 {
+  font-family: var(--font-title);
 }
 :root {
+  --font-text: 'League Spartan', sans-serif;
+  --font-title: 'Luxurious Roman', cursive;
   --light-color: #EFF2FB;
   --dark-color: #040710;
   --blue-100: #BECAEF;
@@ -97,4 +104,77 @@ header {
 }
 .menu__item a:hover::after, .menu__item a:active::after {
     width: 100%;
+}
+
+/* ================= SESSAO DE BOAS VINDAS ===== */
+main {
+  background-color: var(--dark-color);
+}
+.welcome {
+  min-height: calc(100vh - 5rem);
+}
+.welcome__image {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  padding: 1.25rem 1rem;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 100% 50%, 80% 100%, 20% 100%, 0 50%, 0 50%);
+}
+.welcome__content {
+  padding: 1.5rem 1rem;
+}
+.welcome__title {
+  color: var(--blue-100);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.125rem;
+  text-shadow: 0 0 10px var(--dark-blue);
+  margin-bottom: 2rem;
+  transition: text-shadow 0.2s;
+}
+.welcome__title:hover,
+.welcome__title:active {
+  text-shadow: 0 0 10px var(--blue-200);
+}
+.welcome__about {
+  color: var(--light-color);
+  text-shadow: 0 0 10px var(--blue-300);
+  font-size: 1.5rem;
+  text-align: center;
+}
+.welcome__about:hover,
+.welcome__about:active {
+  text-shadow: 0 0 10px var(--light-color);
+}
+@keyframes rocketMove {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: calc(65% - 1rem);
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    left: 0px;
+  }
+}
+.welcome__divider {
+  width: 30%;
+  max-width: 150px;
+  height: 80px;
+  background: url('../images/foguete.png') center/cover no-repeat;
+  object-fit: cover;
+  margin-top: 1rem;
+  position: relative;
+  animation-name: rocketMove;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
 }
