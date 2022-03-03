@@ -14,14 +14,13 @@ h1,h2,h3 {
 :root {
   --font-text: 'League Spartan', sans-serif;
   --font-title: 'Luxurious Roman', cursive;
-  --light-color: #EFF2FB;
-  --dark-color: #040710;
-  --blue-100: #BECAEF;
-  --blue-200: #9DAFE7;
-  --blue-300: #6B87DB;
-  --blue-400: #4A6DD3;
-  --blue-500: #3055C5;
-  --dark-blue: #203983;
+  --light-color: #F9F1F1;
+  --dark-color: #090606;
+  --red-100: #BC6262;
+  --red-200: #8F3D3D;
+  --red-300: #813737;
+  --red-400: #723131;
+  --dark-red: #642B2B;
 }
 
 /* ================= CABEÇALHO ===== */
@@ -33,7 +32,7 @@ header {
       text-shadow: none;
   }
   to {
-      text-shadow: 0 0 10px var(--blue-200);
+      text-shadow: 0 0 10px var(--red-300);
   }
 }
 @keyframes changeBracketColor {
@@ -41,7 +40,7 @@ header {
     color: var(--light-color);
   }
   to {
-    color: var(--blue-400);
+    color: var(--red-300);
   }
 }
 .header__title {
@@ -90,13 +89,13 @@ header {
 }
 .menu__item a:hover,
 .menu__item a:active {
-    text-shadow: 0 0 10px var(--blue-300);
+    text-shadow: 0 0 10px var(--red-300);
 }
 .menu__item a::after {
     content: '';
     width: 0;
     height: 0.125rem;
-    background: var(--blue-200);
+    background: var(--red-200);
     position: absolute;
     left: 0;
     bottom: -1rem;
@@ -126,7 +125,7 @@ main {
   padding: 1.5rem 1rem;
 }
 .welcome__title {
-  color: var(--blue-100);
+  color: var(--red-100);
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
@@ -137,11 +136,11 @@ main {
 }
 .welcome__title:hover,
 .welcome__title:active {
-  text-shadow: 0 0 10px var(--blue-200);
+  text-shadow: 0 0 10px var(--red-100);
 }
 .welcome__about {
   color: var(--light-color);
-  text-shadow: 0 0 10px var(--blue-300);
+  text-shadow: 0 0 10px var(--red-300);
   font-size: 1.5rem;
   text-align: center;
 }
