@@ -106,10 +106,13 @@ header {
 /* ================= SESSAO DE BOAS VINDAS ===== */
 main {
   background-color: var(--dark-color);
-  padding-top: 10rem;
+  padding-top: 9rem;
 }
 .welcome {
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 9rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .welcome__image {
   width: 100%;
@@ -117,12 +120,11 @@ main {
   object-fit: cover;
   margin: 0 auto;
   display: block;
-  padding: 1.25rem 1rem;
+  padding: 0 1rem;
   clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 100% 50%, 80% 100%, 20% 100%, 0 50%, 0 50%);
-  transition: transform 300ms;
 }
 .welcome__content {
-  padding: 1.5rem 1rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,26 +164,25 @@ main {
 }
 @keyframes rocketMove {
   0% {
-    left: 0px;
+    left: 1rem;
   }
   45% {
-    left: calc(65% - 1rem);
+    left: calc(100% - 1rem - 90px);
     transform: rotate(0deg);
   }
   70% {
     transform: rotate(180deg);
   }
   100% {
-    left: 0px;
+    left: 1rem;
   }
 }
 .welcome__divider {
-  width: 30%;
-  max-width: 150px;
+  width: 25%;
+  max-width: 90px;
   height: 80px;
   background: url('../images/foguete.png') center/cover no-repeat;
   object-fit: cover;
-  margin-top: 1rem;
   position: relative;
   animation: rocketMove 8s ease-in-out 1.5s infinite;
 }
