@@ -131,17 +131,21 @@ main {
   justify-content: center;
 }
 .welcome__title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--light-color);
+  line-height: 2.25rem;
+}
+.welcome__title span {
+  font-size: 2.125rem;
   color: var(--red-100);
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2.125rem;
   text-shadow: 0 0 10px var(--dark-red);
-  margin-bottom: 2rem;
   transition: text-shadow 0.2s;
-  text-align: center;
 }
-.welcome__title:hover,
-.welcome__title:active {
+.welcome__title span:hover,
+.welcome__title span:active {
   text-shadow: 0 0 10px var(--red-100);
 }
 @keyframes cursorAnimation {
