@@ -166,29 +166,3 @@ main {
 .welcome__about:active {
   text-shadow: 0 0 10px var(--light-color);
 }
-@keyframes rocketMove {
-  0% {
-    left: 1rem;
-  }
-  25% {
-    transform: rotate(0deg);
-  }
-  50% {
-    left: calc(100% - 1rem - 90px);
-  }
-  75% {
-    transform: rotate(180deg);
-  }
-  100% {
-    left: 1rem;
-  }
-}
-.welcome__divider {
-  width: 25%;
-  max-width: 90px;
-  height: 80px;
-  background: url('../images/foguete.png') center/cover no-repeat;
-  object-fit: cover;
-  position: relative;
-  animation: rocketMove 8s ease-in-out 1.5s infinite;
-}
