@@ -14,13 +14,13 @@ h1,h2,h3 {
 :root {
   --font-text: 'League Spartan', sans-serif;
   --font-title: 'Luxurious Roman', cursive;
-  --light-color: #F9F1F1;
+  --light-color: #F0EEFB;
   --dark-color: #090606;
-  --red-100: #BC6262;
-  --red-200: #8F3D3D;
-  --red-300: #813737;
-  --red-400: #723131;
-  --dark-red: #642B2B;
+  --purple-100: #6F57DB;
+  --purple-200: #5235D4;
+  --purple-300: #4227B9;
+  --purple-400: #362097;
+  --dark-purple: #0C0821;
 }
 
 /* ================= CABEÇALHO ===== */
@@ -31,14 +31,14 @@ header {
     right: 0;
     width: 100%;
     z-index: 100;
-    border-bottom: 0.75px solid var(--red-200);
+    border-bottom: 0.75px solid var(--purple-200);
 }
 @keyframes changeTextShadow {
   from {
       text-shadow: none;
   }
   to {
-      text-shadow: 0 0 10px var(--red-300);
+      text-shadow: 0 0 10px var(--purple-300);
   }
 }
 @keyframes changeBracketColor {
@@ -46,7 +46,7 @@ header {
     color: var(--light-color);
   }
   to {
-    color: var(--red-300);
+    color: var(--purple-400);
   }
 }
 .header__title {
@@ -87,13 +87,13 @@ header {
 }
 .menu__item a:hover,
 .menu__item a:active {
-    text-shadow: 0 0 10px var(--red-300);
+    text-shadow: 0 0 10px var(--purple-300);
 }
 .menu__item a::after {
     content: '';
     width: 0;
     height: 0.125rem;
-    background: var(--red-200);
+    background: var(--purple-200);
     position: absolute;
     left: 0;
     bottom: -1rem;
@@ -137,14 +137,14 @@ main {
 }
 .welcome__title span {
   font-size: 2.125rem;
-  color: var(--red-100);
+  color: var(--purple-300);
   text-transform: uppercase;
-  text-shadow: 0 0 10px var(--dark-red);
+  text-shadow: 0 0 10px var(--dark-purple);
   transition: text-shadow 0.2s;
 }
 .welcome__title span:hover,
 .welcome__title span:active {
-  text-shadow: 0 0 10px var(--red-100);
+  text-shadow: 0 0 5px var(--purple-400);
 }
 @keyframes cursorAnimation {
   from, to { border-color: transparent }
@@ -152,7 +152,7 @@ main {
 }
 .welcome__about {
   color: var(--light-color);
-  text-shadow: 0 0 10px var(--red-300);
+  text-shadow: 0 0 10px var(--purple-300);
   font-size: 1.5rem;
   border-right: 2px solid var(--light-color);
   animation: cursorAnimation 1s step-end infinite;
