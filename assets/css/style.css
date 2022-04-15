@@ -1,19 +1,14 @@
 /* ================= GLOBAL ===== */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Luxurious+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: var(--font-text);
-}
-h1,h2,h3 {
-  font-family: var(--font-title);
+    font-family: 'Press Start 2P', cursive;
 }
 :root {
-  --font-text: 'League Spartan', sans-serif;
-  --font-title: 'Luxurious Roman', cursive;
   --light-color: #F0EEFB;
   --dark-color: #090606;
   --purple-100: #6F57DB;
@@ -55,13 +50,13 @@ header {
     padding-top: 1rem;
     transition: text-shadow 0.2s, color 0.2s;
     animation: changeTextShadow 1.8s ease-in-out infinite alternate;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
 .header__title::before {
-    content: '{';
+    content: '<';
 }
 .header__title::after {
-    content: '}';
+    content: '>';
 }
 .header__title::before,
 .header__title::after {
@@ -81,7 +76,7 @@ header {
 }
 .menu__item a {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 0.85rem;
     color: var(--light-color);
     transition: text-shadow 500ms, color 500ms;
 }
@@ -115,11 +110,7 @@ main {
 }
 .welcome__image {
   width: 100%;
-  max-width: 500px;
   object-fit: cover;
-  margin: 0 auto;
-  padding: 0 1rem;
-  filter: contrast(175%) brightness(103%);
 }
 .welcome__content {
   padding: 0 1rem;
@@ -131,20 +122,13 @@ main {
 .welcome__title {
   font-weight: bold;
   text-align: center;
+  font-size: 1.25rem;
   margin-bottom: 2rem;
   color: var(--light-color);
   line-height: 2.25rem;
 }
-.welcome__title span {
-  font-size: 2.125rem;
-  color: var(--purple-300);
-  text-transform: uppercase;
-  text-shadow: 0 0 10px var(--dark-purple);
-  transition: text-shadow 0.2s;
-}
-.welcome__title span:hover,
-.welcome__title span:active {
-  text-shadow: 0 0 5px var(--purple-400);
+.welcome__title:hover {
+  text-shadow: 0 0 10px var(--purple-300);
 }
 @keyframes cursorAnimation {
   from, to { border-color: transparent }
@@ -153,7 +137,7 @@ main {
 .welcome__about {
   color: var(--light-color);
   text-shadow: 0 0 10px var(--purple-300);
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   border-right: 2px solid var(--light-color);
   animation: cursorAnimation 1s step-end infinite;
   text-align: center;
