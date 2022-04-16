@@ -148,3 +148,24 @@ main {
 .welcome__about:active {
   text-shadow: 0 0 10px var(--light-color);
 }
+
+/* ================= LOADING ===== */
+.loading__container {
+  height: 1.5rem;
+  width: 90%;
+  background-color: #CCC;
+  position: relative;
+  margin: 1.5rem auto;
+  border: 3px solid var(--light-color);
+}
+.loading__bar {
+  position: absolute;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--purple-100), var(--purple-200), var(--purple-400) );
+  width: 100%;
+  animation: loading-animation 5s infinite;
+}
+@keyframes loading-animation {
+  0% {width: 0%; }
+  100% {width: 100%}
+}
