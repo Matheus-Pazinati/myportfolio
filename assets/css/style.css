@@ -169,3 +169,14 @@ main {
   0% {width: 0%; }
   100% {width: 100%}
 }
+
+/* ================= SESSAO SOBRE ===== */
+.about {
+  margin-top: 3.5rem;
+}
+.about__title {
+  font-size: 1rem;
+  color: var(--light-color);
+  animation: changeTextShadow 1.8s ease-in-out infinite alternate;
+  text-align: center;
+}
