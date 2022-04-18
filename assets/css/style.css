@@ -17,6 +17,13 @@
   --purple-400: #362097;
   --dark-purple: #0C0821;
 }
+.section-title {
+  font-size: 2rem;
+  color: var(--light-color);
+  animation: changeTextShadow 1.8s ease-in-out infinite alternate;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ================= CABEÇALHO ===== */
 header {
@@ -26,7 +33,7 @@ header {
     right: 0;
     width: 100%;
     z-index: 100;
-    border-bottom: 0.75px solid var(--purple-200);
+    border-bottom: 0.25rem solid var(--purple-200);
 }
 @keyframes changeTextShadow {
   from {
@@ -173,10 +180,23 @@ main {
 /* ================= SESSAO SOBRE ===== */
 .about {
   margin-top: 3.5rem;
+  padding: 0 1rem;
 }
 .about__title {
-  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.about__description {
   color: var(--light-color);
-  animation: changeTextShadow 1.8s ease-in-out infinite alternate;
-  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  text-align: justify;
+  padding: 0.5rem;
+  background-image: radial-gradient(circle, var(--purple-300), var(--purple-400), var(--dark-purple));
+  border-radius: 8px;
+  border: 2px solid var(--light-color);
+}
+.about__image {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
 }
