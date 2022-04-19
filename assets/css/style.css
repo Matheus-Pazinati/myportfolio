@@ -185,18 +185,19 @@ main {
 .about__title {
   margin-bottom: 1rem;
 }
-.about__description {
-  color: var(--light-color);
-  font-size: 0.8rem;
-  line-height: 1.25rem;
-  text-align: justify;
+.about__container {
   padding: 0.5rem;
   background-image: radial-gradient(circle, var(--purple-300), var(--purple-400), var(--dark-purple));
   border-radius: 8px;
   border: 2px solid var(--light-color);
 }
+.about__description {
+  color: var(--light-color);
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  text-align: justify;
+}
 .about__image {
   display: block;
   margin: 0 auto;
-  width: 60%;
 }
