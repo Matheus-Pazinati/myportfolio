@@ -209,6 +209,9 @@ main {
 .projects__cards {
   padding: 0 1rem;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .project__card {
   width: 100%;
@@ -236,8 +239,16 @@ main {
   backface-visibility: hidden;
 }
 .card__front {
-  background: url('../images/projeto1-pixel.png') no-repeat center/cover;
   object-fit: cover;
+}
+.front__first-project {
+  background: url('../images/projeto1-pixel.png') no-repeat center/cover;
+}
+.front__second-project {
+  background: url('../images/projeto2-pixel.jpg') no-repeat center/cover;
+}
+.front__third-project {
+  background: url('../images/projeto3-pixel.jpg') no-repeat center/cover;
 }
 .card__back {
   background-image: radial-gradient(circle, var(--purple-300), var(--purple-400), var(--dark-purple));
