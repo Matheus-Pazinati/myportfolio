@@ -202,6 +202,7 @@ main {
 /* ================= SESSAO PROJETOS ===== */
 .projects {
   margin-top: 8rem;
+  padding-bottom: 2rem;
 }
 .projects__cards {
   padding: 0 1rem;
@@ -222,17 +223,15 @@ main {
 .project__card:hover .card__container,
 .project__card:active .card__container {
   transform: rotateY(180deg);
-  box-shadow: -4px 4px 1px #CCC;
 }
 .card__container {
   position: absolute;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  border: 2px groove var(--dark-purple);
+  border: 6px groove #CCC;
   border-radius: 4px;
   transition: all 0.4s ease-in-out;
-  box-shadow: 4px 4px 1px #CCC;
 }
 .card__face {
   position: absolute;
@@ -288,7 +287,7 @@ main {
 }
 .back__icon {
   display: inline-block;
-  width: 45px;
+  width: 50px;
 }
 .back__icon img {
   width: 100%;
