@@ -305,15 +305,16 @@ main {
 /* =================CONTATO ===== */
 .contact {
   margin-top: 8rem;
+  padding: 0 0.75rem;
 }
 .contact__form {
-  width: 85%;
   margin: 2rem auto 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   background-color: var(--dark-purple);
   padding: 0.75rem;
+  border: 2px groove var(--light-color);
   border-radius: 4px;
 }
 .contact__form input,
@@ -347,4 +348,22 @@ main {
 }
 .contact__submit:hover {
   background-color: var(--purple-400);
+}
+
+/* =================SOCIAL ===== */
+.contact__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.25rem;
+  margin-top: 1rem;
+}
+.social__link {
+  width: 25%;
+}
+.social__link img {
+  width: 100%;
+}
+.github__image {
+  filter: invert(100%);
 }
