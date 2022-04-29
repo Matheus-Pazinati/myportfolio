@@ -9,6 +9,11 @@
     font-family: 'Press Start 2P', cursive;
     scroll-behavior: smooth;
 }
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
 :root {
   --light-color: #F0EEFB;
   --dark-color: #090606;
@@ -153,7 +158,7 @@ main {
   text-shadow: 0 0 10px var(--light-color);
 }
 
-/* ================= LOADING ===== */
+/* =================LOADING ===== */
 .loading__container {
   height: 1.5rem;
   width: 90%;
@@ -174,7 +179,7 @@ main {
   100% {width: 100%}
 }
 
-/* ================= SESSAO SOBRE ===== */
+/* =================SOBRE ===== */
 .about {
   margin-top: 3.5rem;
   padding: 0 1rem;
@@ -199,7 +204,7 @@ main {
   margin: 0 auto;
 }
 
-/* ================= SESSAO PROJETOS ===== */
+/* =================PROJETOS ===== */
 .projects {
   margin-top: 8rem;
   padding-bottom: 2rem;
@@ -295,4 +300,51 @@ main {
 }
 .back__icon img:hover {
   filter: grayscale(0);
+}
+
+/* =================CONTATO ===== */
+.contact {
+  margin-top: 8rem;
+}
+.contact__form {
+  width: 85%;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--dark-purple);
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+.contact__form input,
+.contact__form textarea {
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 3px solid;
+  animation: changeBorderColor 2.5s infinite ease-in-out alternate;
+  transition: all 0.2s;
+  width: 100%;
+  font-size: 0.8rem;
+}
+@keyframes changeBorderColor {
+  from{
+      border-image: linear-gradient(90deg, var(--purple-400), var(--purple-100) 100%) 1;  
+  }
+  to {
+      border-image: linear-gradient(90deg, var(--purple-100), var(--purple-400) 100%) 1;  
+  }
+}
+.contact__form label {
+  color: var(--light-color);
+  font-size: 0.8rem;
+}
+.contact__submit {
+  padding: 1rem;
+  background-color: var(--dark-purple);
+  color: var(--light-color);
+  animation: changeBorderColor 2.5s infinite ease-in-out alternate;
+  cursor: pointer;
+}
+.contact__submit:hover {
+  background-color: var(--purple-400);
 }

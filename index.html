@@ -122,6 +122,20 @@
         </li>
       </ul>
     </section>
+    <section class="contact">
+      <h2 class="contact__title section-title">Contato</h2>
+      <form action="mailto:problemchild007m@gmail.com" class="contact__form" enctype="text/plain" method="POST">
+        <div class="name__container">
+          <label for="username">Seu nome</label>
+          <input type="text" class="contact__name" name="username" required>
+        </div>
+        <div class="message__container">
+          <label for="message">Escreva sua mensagem</label>
+          <textarea name="message" id="message" class="contact__message" cols="20" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="contact__submit">Enviar Mensagem</button>
+      </form>
+    </section>
   </main>
 </body>
 </html>
