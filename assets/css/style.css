@@ -26,14 +26,16 @@ textarea {
 .section-title {
   font-size: 2rem;
   color: var(--light-color);
-  animation: changeTextShadow 1.8s ease-in-out infinite alternate;
+  animation: changeTextShadow 2s infinite alternate;
   text-align: center;
   text-transform: uppercase;
+}
+body {
+  background-color: var(--dark-color);
 }
 
 /* ================= CABEÇALHO ===== */
 header {
-    background-color: var(--dark-color);
     width: 100%;
     border-bottom: 0.25rem solid var(--purple-200);
 }
@@ -42,7 +44,7 @@ header {
       text-shadow: none;
   }
   to {
-      text-shadow: 0 0 10px var(--purple-300);
+      text-shadow: 4px 4px 4px var(--purple-200);
   }
 }
 @keyframes changeBracketColor {
@@ -108,9 +110,6 @@ header {
 }
 
 /* ================= SESSAO DE BOAS VINDAS ===== */
-main {
-  background-color: var(--dark-color);
-}
 .welcome {
   display: flex;
   flex-direction: column;
