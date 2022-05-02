@@ -366,3 +366,29 @@ header {
 .github__image {
   filter: invert(100%);
 }
+
+/* ================= RODAPÉ ===== */
+footer {
+  margin-top: 8rem;
+}
+.gameover__container {
+  width: 100%;
+  height: 5rem;
+}
+.gameover__title {
+  text-align: center;
+  color: var(--light-color);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  animation: gameOverAnimation 2.25s infinite;
+}
+@keyframes gameOverAnimation {
+  from {
+    font-size: 0px;
+    text-shadow: none;
+  }
+  to {
+    font-size: 2.2rem;
+    text-shadow: 4px 4px 4px #EE1111;
+  }
+}
