@@ -25,23 +25,23 @@
     </header>
     <main>
       <section class="welcome">
-        <img src="./assets/images/welcome-banner.jpg" alt="Desenho em Pixel Art de uma pessoa programando" class="welcome__image">
+        <div class="welcome__image"></div>
           <div class="welcome__content">
               <h2 class="welcome__title">Matheus Martins Pazinati</h2>
               <p class="welcome__about">Desenvolvedor Front End</p>
+              <div class="loading__container">
+                <div class="loading__bar"></div>
+              </div>
           </div>
       </section>
-      <div class="loading__container">
-        <div class="loading__bar"></div>
-      </div>
-      <section class="about" id="about">
+      <section class="about section-container" id="about">
         <h2 class="about__title section-title">Sobre mim</h2>
         <div class="about__container">
           <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, illum. Aliquid quaerat aut voluptate praesentium illo totam aliquam blanditiis est quo at dignissimos unde dolore alias laboriosam, rerum impedit fugit!</p>
           <img src="./assets/images/matheus-pixel.png" alt="Matheus em formato de pixel art" class="about__image">
         </div>
     </section>
-    <section class="projects" id="projects">
+    <section class="projects section-container" id="projects">
       <h2 class="project__title section-title">Projetos</h2>
       <ul class="projects__cards">
         <li class="project__card">
@@ -122,9 +122,9 @@
         </li>
       </ul>
     </section>
-    <section class="contact" id="contact">
-      <h2 class="contact__title section-title">Contato</h2>
+    <section class="contact section-container" id="contact">
       <form action="mailto:problemchild007m@gmail.com" class="contact__form" enctype="text/plain" method="POST">
+        <h2 class="contact__title section-title">Contato</h2>
         <div class="name__container">
           <label for="username">Seu nome</label>
           <input type="text" class="contact__name" name="username" required>
