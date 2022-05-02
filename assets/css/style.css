@@ -387,3 +387,13 @@ footer {
     text-shadow: 4px 4px 4px #EE1111;
   }
 }
+
+/* ================= RESPONSIVIDADE ===== */
+@media (min-width: 650px) {
+  .section-container {
+    padding: 8rem 4rem 0;
+  }
+  .header__menu {
+    padding: 1.2rem 4rem;
+  }
+}
