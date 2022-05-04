@@ -39,15 +39,19 @@ body {
 
 /* ================= CABEÇALHO ===== */
 header {
-    width: 100%;
-    border-bottom: 0.25rem solid var(--purple-200);
+  width: 100%;
+  border-bottom: 0.25rem solid var(--purple-200);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 @keyframes changeTextShadow {
   from {
-      text-shadow: none;
+    text-shadow: none;
   }
   to {
-      text-shadow: 4px 4px 4px var(--purple-200);
+    text-shadow: 4px 4px 4px var(--purple-200);
   }
 }
 @keyframes changeBracketColor {
@@ -59,57 +63,53 @@ header {
   }
 }
 .header__title {
-    color: var(--light-color);
-    text-align: center;
-    padding-top: 1rem;
-    transition: text-shadow 0.2s, color 0.2s;
-    animation: changeTextShadow 1.8s ease-in-out infinite alternate;
-    font-size: 1.5rem;
+  color: var(--light-color);
+  text-align: center;
+  transition: text-shadow 0.2s, color 0.2s;
+  animation: changeTextShadow 1.8s ease-in-out infinite alternate;
+  font-size: 1.5rem;
 }
 .header__title::before {
-    content: '<';
+  content: '<';
 }
 .header__title::after {
-    content: '>';
+  content: '>';
 }
 .header__title::before,
 .header__title::after {
   transition: color 0.2s;
   animation: changeBracketColor 1.8s ease-in-out infinite alternate;
 }
-.header__menu {
-  padding: 1.2rem 1rem;
-}
 .menu__items {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
 }
 .menu__item {
-    padding: 0.5rem 0;
+  padding: 0.5rem 0;
 }
 .menu__item a {
-    position: relative;
-    font-size: 0.85rem;
-    color: var(--light-color);
-    transition: text-shadow 500ms, color 500ms;
+  position: relative;
+  font-size: 0.85rem;
+  color: var(--light-color);
+  transition: text-shadow 500ms, color 500ms;
 }
 .menu__item a:hover,
 .menu__item a:active {
-    text-shadow: 0 0 10px var(--purple-300);
+  text-shadow: 0 0 10px var(--purple-300);
 }
 .menu__item a::after {
-    content: '';
-    width: 0;
-    height: 0.125rem;
-    background: var(--purple-200);
-    position: absolute;
-    left: 0;
-    bottom: -1rem;
-    transition: width 0.2s;
+  content: '';
+  width: 0;
+  height: 0.125rem;
+  background: var(--purple-200);
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  transition: width 0.2s;
 }
-.menu__item a:hover::after, .menu__item a:active::after {
-    width: 100%;
+.menu__item a:hover::after {
+  width: 100%;
 }
 
 /* ================= SESSAO DE BOAS VINDAS ===== */
@@ -393,7 +393,44 @@ footer {
   .section-container {
     padding: 8rem 4rem 0;
   }
-  .header__menu {
-    padding: 1.2rem 4rem;
-  }
 }
+@media (min-width: 750px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+  }
+  .welcome__image {
+    height: 400px;
+    background-position: bottom;
+  }
+  .welcome__title {
+    font-size: 1.75rem;
+  }
+  .welcome__about {
+    font-size: 1.25rem;
+  }
+  .about__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .projects {
+    padding: 8rem 2rem 0;
+  }
+  .projects__cards {
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  @keyframes gameOverAnimation {
+    from {
+      font-size: 0px;
+    }
+    to {
+      font-size: 3.5rem;
+    }
+  }
+}  
