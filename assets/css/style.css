@@ -88,17 +88,17 @@ header {
 .menu__item {
   padding: 0.5rem 0;
 }
-.menu__item a {
+.menu__link {
   position: relative;
   font-size: 0.85rem;
   color: var(--light-color);
   transition: text-shadow 500ms, color 500ms;
 }
-.menu__item a:hover,
-.menu__item a:active {
+.menu__link:hover,
+.menu__link:active {
   text-shadow: 0 0 10px var(--purple-300);
 }
-.menu__item a::after {
+.menu__link::after {
   content: '';
   width: 0;
   height: 0.125rem;
@@ -108,7 +108,7 @@ header {
   bottom: -1rem;
   transition: width 0.2s;
 }
-.menu__item a:hover::after {
+.menu__link:hover::after {
   width: 100%;
 }
 
@@ -399,7 +399,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 4rem;
+    padding: 2rem 4rem;
   }
   .welcome__image {
     height: 400px;
@@ -415,7 +415,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.25rem;
   }
   .projects {
     padding: 8rem 2rem 0;
@@ -428,9 +428,70 @@ footer {
   @keyframes gameOverAnimation {
     from {
       font-size: 0px;
+      text-shadow: none;
     }
     to {
       font-size: 3.5rem;
+      text-shadow: 4px 4px 4px #EE1111;
     }
+  }
+}
+@media (min-width: 1100px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  .section-container {
+    padding: 8rem 6rem 0;
+  }
+  .header__title {
+    font-size: 2rem;
+  }
+  .menu__link {
+    font-size: 1.25rem;
+  }
+  .welcome {
+    position: relative;
+  }
+  .welcome__content {
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 1rem;
+    left: 1rem;
+  }
+  .welcome__image {
+    height: 500px;
+  }
+  .about__image {
+    width: 300px;
+    height: 300px;
+  }
+  .about__description {
+    font-size: 1.25rem;
+  }
+  .project__card {
+    max-width: 600px;
+    height: 325px;
+  }
+  .back__title {
+    font-size: 1.5rem;
+  }
+  .back__description {
+    font-size: 1.1rem;
+  }
+  .back__icon {
+    width: 65px;
+  }
+  .contact__form label {
+    font-size: 1.1rem;
+  }
+  .contact__form input {
+    padding: 1rem;
+  }
+  .contact__submit {
+    padding: 1.5rem;
+    font-size: 1.5rem;
   }
 }  
