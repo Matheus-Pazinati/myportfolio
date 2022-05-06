@@ -199,7 +199,7 @@ header {
 .about__description {
   color: var(--light-color);
   font-size: 0.8rem;
-  line-height: 1.25rem;
+  line-height: 2rem;
   text-align: justify;
 }
 .about__image {
@@ -496,6 +496,15 @@ footer {
   }
 }
 @media (min-width: 1400px) {
+  .section-container {
+    padding: 8rem 10rem 0;
+  }
+  .menu__items {
+    gap: 3rem;
+  }
+  .welcome__image {
+    height: 600px;
+  }
   .project__card {
     height: 360px;
     max-width: 700px;
@@ -507,5 +516,9 @@ footer {
   }
   .contact__form {
     flex-grow: 1;
+  }
+  .contact__form input,
+  .contact__form textarea {
+    font-size: 1.1rem;
   }
 }
