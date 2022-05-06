@@ -123,15 +123,15 @@
       </ul>
     </section>
     <section class="contact section-container" id="contact">
-      <form action="mailto:problemchild007m@gmail.com" class="contact__form" enctype="text/plain" method="POST">
+      <form action="mailto:problemchild007m@gmail.com" class="contact__form" enctype="text/plain" method="POST" data-form-submit>
         <h2 class="contact__title section-title">Contato</h2>
         <div class="name__container">
           <label for="username">Seu nome</label>
-          <input type="text" class="contact__name" name="username" required>
+          <input type="text" class="contact__name" name="username" required data-form-text>
         </div>
         <div class="message__container">
           <label for="message">Escreva uma mensagem</label>
-          <textarea name="message" id="message" class="contact__message" cols="20" rows="10" required></textarea>
+          <textarea name="message" id="message" class="contact__message" cols="20" rows="10" required data-form-text></textarea>
         </div>
         <button type="submit" class="contact__submit">Enviar Mensagem</button>
       </form>
@@ -155,5 +155,6 @@
       </div>
     </section>
   </footer>
+  <script src="./assets/scripts/clear-form-fields.js"></script>
 </body>
 </html>
