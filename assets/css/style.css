@@ -497,7 +497,7 @@ footer {
 }
 @media (min-width: 1400px) {
   .section-container {
-    padding: 8rem 10rem 0;
+    padding: 15rem 10rem 0;
   }
   .menu__items {
     gap: 3rem;
@@ -528,6 +528,6 @@ footer {
     grid-template-rows: 1fr;
   }
   .projects {
-    padding: 8rem 1rem 0;
+    padding: 15rem 1rem 0;
   }
 }
