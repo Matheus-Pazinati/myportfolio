@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"><span><</span>matheus<span style=\"color:purple\">.dev</span><span>></span></h1>\r <p align=\"center\">\r   <img src=\"./assets/.github/banner-github.png\">\r </p>\r <h2>👨‍🎤 Sobre</h2>\r <p>Site do meu portfolio na área de desenvolvimento de software, com detalhes sobre minha vida pessoal e acadêmica, além de alguns projetos que desenvolvi, tudo isso com uma temática \"retrô\", baseada em jogos antigos (Pixel Art).<br>\r Você pode visitar o site através deste link: <a href=\"https://matheus-pazinati.github.io/portfolio-matheus.dev\">Acessar portfolio</a>\r </p>\r <br>\r <h2>🎯 Objetivo</h2>\r <p>Mostrar minhas conquistas e projetos na área de tecnologia, além de aplicar na prática pela primeira vez alguns recursos do css como animações e transições. Além disso, o projeto serviu para reforçar e aplicar aprendizados de HTML e CSS, como tags semânticas, posicionamento de itens com Grid e Flex, inserção de imagens, entre outros.</p>\r <br>\r <h2>🚀 Tecnologias utilizadas</h2>\r   <ul>\r     <li>HTML</li>\r     <li>CSS</li>\r     <li>Javascript</li>\r   </ul>\r <br>\r <h2>📌 Melhorias a serem implementadas</h2>\r   <ul>\r     <li>Adicionar nova sessão de \"Hard Skills\" antes da sessão de Projetos</li>\r     <li>Incluir uma sessão de \"Hobbies e Curiosidades\", mostrando por exemplo filmes e bandas que eu gosto.</li>\r   </ul>\r <br>\r <br>\r <p align=\"center\">Made by Matheus Pazinati 🛸</p>",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matheus-Pazinati/myportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matheus-Pazinati/myportfolio/issues"
+  },
+  "homepage": "https://github.com/Matheus-Pazinati/myportfolio#readme"
+}

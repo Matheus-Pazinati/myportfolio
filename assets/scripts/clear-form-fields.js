@@ -1,12 +1,6 @@
-const formSubmit = document.querySelector('[data-form-submit]')
-
-function clearText(field) {
-  field.value = ""
-}
-
-function clearFormFields() {
+export function clearFormFields() {
   const formFields = document.querySelectorAll('[data-form-text]')
-  formFields.forEach(clearText)
+  formFields.forEach((field) => {
+    field.value = "";
+  })
 }
-
-formSubmit.addEventListener('submit', clearFormFields)
