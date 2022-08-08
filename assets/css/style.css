@@ -372,6 +372,20 @@ header {
   font-size: 1.25rem;
   animation: changeTextShadow 2s infinite alternate;
 }
+.social__curriculum {
+  text-align: center;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.curriculum__button {
+  padding: 1rem;
+  background-color: var(--purple-300);
+  color: var(--light-color);
+  transition: all 0.3s;
+}
+.curriculum__button:hover {
+  background-color: var(--purple-200);
+}
 
 /* ================= RODAPÉ ===== */
 footer {
