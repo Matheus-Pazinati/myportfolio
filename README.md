@@ -19,6 +19,7 @@ Você pode visitar o site através deste link: <a href="https://matheus-pazinati
 <br>
 <h2>📌 Melhorias a serem implementadas</h2>
   <ul>
+    <li>Criar um botão que faça o download do meu currículo. - Ok ✔️</li>
     <li>Adicionar nova sessão de "Hard Skills" antes da sessão de Projetos</li>
     <li>Incluir uma sessão de "Hobbies e Curiosidades", mostrando por exemplo filmes e bandas que eu gosto.</li>
   </ul>
